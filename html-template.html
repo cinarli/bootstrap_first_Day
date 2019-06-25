@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<title>Document</title>
+<style>
+.header{
+background-color: green;
+padding-bottom: 20px;
+
+
+}
+.modalgiris{
+margin-top: 10px;
+}
+.qeydiyyat{
+margin-left: 10px;
+margin-top: 10px;
+
+}
+.menu{
+height: 500px;
+background-color: grey;
+}
+.body{
+height: 500px;
+background-color: antiquewhite;
+}
+.footer{
+height: 50px;
+background-color:rgb(206, 206, 160);
+}
+.menu{
+padding: 0px;
+
+}
+.menu li{
+margin: 5px;
+border-radius: 5px;
+}
+.menu li:hover{
+background-color: aqua;
+cursor: pointer;
+}
+.qeydiyyat table tr td{
+width: 50%;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="row header">
+        <button type="button" class="btn btn-primary col-md-1 qeydiyyat" data-toggle="modal" data-target="#exampleModalLong">Giriş</button>
+        <button type="button" class="btn btn-primary col-md-1 qeydiyyat" data-toggle="modal" data-target="#exampleModalLong2">Qeydiyyat</button>
+    </div>
+    <div class="row">
+        <div class="col-md-12"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 menu">
+            <ul class="list-group menulist">
+                <li class="list-group-item list-group-item-light">Ana səhifə</li>
+                <li class="list-group-item list-group-item-light">Şəkillər</li>
+                <li class="list-group-item list-group-item-light">Vİdeolar</li>
+                <li class="list-group-item list-group-item-light">Haqqımızda</li>
+            </ul>
+        </div>
+        <div class="col-md-9 body"></div>
+    </div>
+    <div class="row footer">
+            
+        <p>Posted by: Ali Hasanov</p>
+        <p>Contact information: <a href="mailto:alichelsea123@gmail.com">
+                alichelsea123@gmail.com</a></p>
+                
+    </div>
+</div>
+    <!-- Modal -->
+
+
+    <!--ilk Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Giriş</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="email" class="col-md-12">
+                <input type="password" placeholder="password" class="col-md-12">
+                <button type="button" class="btn btn-primary modalgiris col-md-12">Giriş</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Modal -->
+    <!--2-ci Modal -->
+    <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">      <div class="modal-footer">
+    
+    </div>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Qeydiyyat</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body qeydiyyat">
+                <table>
+                    <tr>
+                        <td>Ad</td>
+                        <td>
+                            <input type="text" placeholder="Ad yaz">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Soyad</td>
+                        <td>
+                            <input type="password" placeholder="Soyad">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>
+                            <input type="text" placeholder="Email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>
+                            <input type="password" placeholder="Sifre">
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" class="btn btn-primary modalgiris col-md-12">Qeydiyyat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<!-- modal son-->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
